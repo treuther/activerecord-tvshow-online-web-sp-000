@@ -24,7 +24,7 @@ class Show < ActiveRecord::Base
 
   #returns the sum of all of the ratings
   def self.ratings_sum
-    Show.sum(:ratings)
+    Show.sum(:rating)
   end
 
 end
