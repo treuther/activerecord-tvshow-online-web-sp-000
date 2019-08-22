@@ -17,4 +17,8 @@ def self.lowest_rating
   Show.minimum(:rating)
 end
 
+#returns the lowest value in the ratings column
+def self.least_popular_show
+  Show.find_by(rating: self.lowest_rating)
+end
 end
