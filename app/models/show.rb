@@ -6,8 +6,15 @@ def self.highest_rating
 Show.maximum(:rating)
 end
 
+#this method should return the show with the highest rating. hint: use the
+#highest_rating method as a helper method.
 def self.most_popular_show
   Show.find_by(rating: self.highest_rating)
+end
+
+#returns the lowest value in the ratings column
+def self.lowest_rating
+
 end
 
 end
