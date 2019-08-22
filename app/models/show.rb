@@ -14,7 +14,7 @@ end
 
 #returns the lowest value in the ratings column
 def self.lowest_rating
-
+  Show.minimum(:rating)
 end
 
 end
